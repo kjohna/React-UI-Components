@@ -1,5 +1,33 @@
 /* All styles for your header Components live here */
 
+.header-container {
+  display: flex;
+}
+
 .header-thumb {
   border-radius: 120px;
+  max-width: 46px;
+}
+
+.header-title {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.header-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.header-handle {
+  color: gray;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.header-timestamp {
+  color: gray;
+  font-size: 13px;
 }
