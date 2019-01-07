@@ -4,9 +4,9 @@ import thumbSrc from '../../img/lambda-logo.jpg';
 
 function ImageThumbnail() {
   return (
-    <div>
+    <React.Fragment>
       <img src={thumbSrc} className="header-thumb"></img>
-    </div>
+    </React.Fragment>
   );
 }
 

@@ -1,12 +1,22 @@
 /* All styles for your header Components live here */
 
 .header-container {
+}
+
+.header-container-top {
   display: flex;
+}
+
+.header-container-bottom {
+  margin-top: -35px;
+  padding-left: 56px;
+  max-width: 500px;
 }
 
 .header-thumb {
   border-radius: 120px;
   max-width: 46px;
+  max-height: 46px;
 }
 
 .header-title {
@@ -30,4 +40,9 @@
 .header-timestamp {
   color: gray;
   font-size: 13px;
+}
+
+.header-content {
+  font-size: 14px;
+  line-height: 17px;
 }
