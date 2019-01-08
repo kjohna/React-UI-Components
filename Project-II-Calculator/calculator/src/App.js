@@ -16,12 +16,12 @@ const App = () => {
         <NumberButton buttonStyle="button-white" text="7" />
         <NumberButton buttonStyle="button-white" text="8" />
         <NumberButton buttonStyle="button-white" text="9" />
-        <NumberButton buttonStyle="button-red" text="x" />
+        <NumberButton buttonStyle="button-red" text="×" />
       <div className="buttons-row-3"></div>
         <NumberButton buttonStyle="button-white" text="4" />
         <NumberButton buttonStyle="button-white" text="5" />
         <NumberButton buttonStyle="button-white" text="6" />
-        <NumberButton buttonStyle="button-red" text="-" />
+        <NumberButton buttonStyle="button-red" text="−" />
       <div className="buttons-row-4"></div>
         <NumberButton buttonStyle="button-white" text="1" />
         <NumberButton buttonStyle="button-white" text="2" />

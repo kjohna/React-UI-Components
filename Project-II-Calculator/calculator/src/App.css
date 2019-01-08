@@ -1,4 +1,5 @@
 .calculator-container {
+  box-sizing: border-box;
   border: 2px solid gray;
-  width: 450px;
+  width: 456px;
 }

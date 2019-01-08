@@ -2,15 +2,17 @@ button {
   font-size: 40px;
   width: 111px;
   padding: 22px;
+  border-color: gray;
 }
 
 .button-white {
-  background-color: #ffffff;
+  background-color: #fefefe;
 }
 
 .button-red {
   background-color: #9E0522;
   color: white;
+  width: 119px;
 }
 
 .button-wide {
