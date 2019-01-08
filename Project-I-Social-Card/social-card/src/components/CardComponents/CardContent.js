@@ -8,7 +8,7 @@ function CardContent() {
       <p>
         React makes it painless to create interactive UIs. Design simple views for each state in your application.
       </p>
-      <a href="#" className="card-content-link">
+      <a href="https://www.reactjs.org" className="card-content-link">
         reactjs.org
       </a>
     </div>

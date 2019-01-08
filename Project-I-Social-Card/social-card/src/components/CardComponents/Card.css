@@ -5,6 +5,16 @@
   width: 500px;
 }
 
+.card-container a {
+  text-decoration: none;
+  display: block;
+}
+
+.card-container a:visited {
+  text-decoration: none;
+  display: block;
+}
+
 .card-banner {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -21,6 +31,7 @@
   border: 1px solid grey;
   padding: 0 5px 5px 15px;
   font-size: 14px;
+  color: black;
 }
 
 .card-content h3 {
