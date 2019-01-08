@@ -7,24 +7,21 @@ import footerFavorite from '../../img/outline-favorite_border-24px.svg';
 import footerMail from '../../img/outline-mail_outline-24px.svg';
 
 class FooterContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = props.state;
+  }
+  
   render() {
+    console.log(this.state);
+    let shareCount = 6;
+    let likeCount = 4;
     return(
       <div className="footer-container">
-        <FooterIcon className="footer-comment" imgSrc={footerComment}/>
-        <div className="footer-icon-container footer-comment">
-          <img src={footerComment} className="footer-comment-img"></img>
-        </div>
-        <div className="footer-icon-container footer-share">
-          <img src={footerShare} className="footer-share-img"></img>
-          <div className="footer-counter footer-share-count">6</div>
-        </div>
-        <div className="footer-icon-container footer-favorite">
-          <img src={footerFavorite} className="footer-favorite-img"></img>
-          <div className="footer-counter footer-favorite-count">4</div>
-        </div>
-        <div className="footer-icon-container footer-mail">
-          <img src={footerMail} className="footer-mail-img"></img>
-        </div>
+        <FooterIcon className="footer-comment" imgSrc={footerComment} />
+        <FooterIcon className="footer-share" imgSrc={footerShare} count={shareCount} />
+        <FooterIcon className="footer-favorite" imgSrc={footerFavorite} count={likeCount} />
+        <FooterIcon className="footer-mail" imgSrc={footerMail} />
       </div>
     );
   }
