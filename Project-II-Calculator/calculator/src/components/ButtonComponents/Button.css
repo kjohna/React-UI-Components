@@ -1,0 +1,19 @@
+button {
+  font-size: 40px;
+  width: 111px;
+  padding: 22px;
+}
+
+.button-white {
+  background-color: #ffffff;
+}
+
+.button-red {
+  background-color: #9E0522;
+  color: white;
+}
+
+.button-wide {
+  width: 333px;
+  font-weight: lighter;
+}
