@@ -1,0 +1,12 @@
+.display-container {
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  padding: 37px 11px;
+  font-size: 72px;
+  font-weight: lighter;
+}
