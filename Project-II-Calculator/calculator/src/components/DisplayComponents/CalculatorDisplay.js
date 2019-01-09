@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import './Display.css';
 
-class Display extends Component {
+class CalculatorDisplay extends Component {
 
   render () {
 
     return (
       <div className="display-container">
-          0
+          {this.props.total}
       </div>
     );
   }
 }
 
-export default Display;
+export default CalculatorDisplay;
