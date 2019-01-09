@@ -8,14 +8,25 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      total: 7,
+      total: 0,
       buffer: null,
       operation: null
     };
   }
 
   clickHandler(btnPressed) {
-    console.log(btnPressed);
+    console.log("button pressed: ", btnPressed);
+
+    if (typeof btnPressed === 'number') {
+      this.setState((state) => {
+        return { total: (state.total * 10) + btnPressed};
+      });
+    } else if (btnPressed === "=") {
+      if (this.state.buffer != null) {
+        console.log("= pressed, do operation");
+      }
+      console.log("= pressed, no operation selected");
+    }
   }
 
   render () {
@@ -27,25 +38,25 @@ class App extends Component {
           <NumberButton buttonStyle="button-red" text="÷" onClick={this.clickHandler.bind(this, "/")} />
         </div>
         <div className="buttons-row-2">
-          <NumberButton buttonStyle="button-white" text="7" onClick={this.clickHandler.bind(this, "7")} />
-          <NumberButton buttonStyle="button-white" text="8" onClick={this.clickHandler.bind(this, "8")} />
-          <NumberButton buttonStyle="button-white" text="9" onClick={this.clickHandler.bind(this, "9")} />
+          <NumberButton buttonStyle="button-white" text="7" onClick={this.clickHandler.bind(this, 7)} />
+          <NumberButton buttonStyle="button-white" text="8" onClick={this.clickHandler.bind(this, 8)} />
+          <NumberButton buttonStyle="button-white" text="9" onClick={this.clickHandler.bind(this, 9)} />
           <NumberButton buttonStyle="button-red" text="×" onClick={this.clickHandler.bind(this, "x")} />
         </div>
         <div className="buttons-row-3">
-          <NumberButton buttonStyle="button-white" text="4" onClick={this.clickHandler.bind(this, "4")} />
-          <NumberButton buttonStyle="button-white" text="5" onClick={this.clickHandler.bind(this, "5")} />
-          <NumberButton buttonStyle="button-white" text="6" onClick={this.clickHandler.bind(this, "6")} />
+          <NumberButton buttonStyle="button-white" text="4" onClick={this.clickHandler.bind(this, 4)} />
+          <NumberButton buttonStyle="button-white" text="5" onClick={this.clickHandler.bind(this, 5)} />
+          <NumberButton buttonStyle="button-white" text="6" onClick={this.clickHandler.bind(this, 6)} />
           <NumberButton buttonStyle="button-red" text="−" onClick={this.clickHandler.bind(this, "-")} />
         </div>
         <div className="buttons-row-4">
-          <NumberButton buttonStyle="button-white" text="1" onClick={this.clickHandler.bind(this, "1")} />
-          <NumberButton buttonStyle="button-white" text="2" onClick={this.clickHandler.bind(this, "2")} />
-          <NumberButton buttonStyle="button-white" text="3" onClick={this.clickHandler.bind(this, "3")} />
+          <NumberButton buttonStyle="button-white" text="1" onClick={this.clickHandler.bind(this, 1)} />
+          <NumberButton buttonStyle="button-white" text="2" onClick={this.clickHandler.bind(this, 2)} />
+          <NumberButton buttonStyle="button-white" text="3" onClick={this.clickHandler.bind(this, 3)} />
           <NumberButton buttonStyle="button-red" text="+" onClick={this.clickHandler.bind(this, "+")} />
         </div>
         <div className="buttons-row-5">
-          <ActionButton buttonStyle="button-white button-wide" text="0" onClick={this.clickHandler.bind(this, "0")} />
+          <ActionButton buttonStyle="button-white button-wide" text="0" onClick={this.clickHandler.bind(this, 0)} />
           <NumberButton buttonStyle="button-red" text="=" onClick={this.clickHandler.bind(this, "=")} />
         </div>
       </div>
